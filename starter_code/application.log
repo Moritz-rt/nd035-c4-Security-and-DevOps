@@ -83,3 +83,18 @@ org.springframework.security.authentication.BadCredentialsException: Bad credent
 2021-03-03 00:09:38 [http-nio-8080-exec-5] TRACE c.e.demo.controllers.CartController - addToCart - item added: Moritz - 2
 2021-03-03 00:09:45 [http-nio-8080-exec-6] TRACE c.e.demo.controllers.CartController - removeFromcart - item removed: Moritz - 1
 2021-03-03 00:09:55 [http-nio-8080-exec-9] TRACE c.e.demo.controllers.OrderController - Order created for: Moritz with 5 items.
+2021-03-03 23:24:23 [main] INFO  com.example.demo.SareetaApplication - Starting SareetaApplication on morifis001 with PID 516 (C:\dev\udacity\nd035-c4-project\starter_code\target\classes started by morifis in C:\dev\udacity\nd035-c4-project\starter_code)
+2021-03-03 23:24:23 [main] DEBUG com.example.demo.SareetaApplication - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2021-03-03 23:24:23 [main] INFO  com.example.demo.SareetaApplication - No active profile set, falling back to default profiles: default
+2021-03-03 23:24:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-03 23:24:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-03-03 23:24:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-03 23:24:28 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-03 23:24:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2021-03-03 23:24:28 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-03 23:24:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-03-03 23:24:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-03-03 23:24:28 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-03 23:24:29 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-03 23:24:30 [main] DEBUG c.e.d.s.JWTAuthenticationVerficationFilter - Filter 'JWTAuthenticationVerficationFilter' configured for use
+2021-03-03 23:24:31 [main] INFO  com.example.demo.SareetaApplication - Started SareetaApplication in 8.857 seconds (JVM running for 10.459)
