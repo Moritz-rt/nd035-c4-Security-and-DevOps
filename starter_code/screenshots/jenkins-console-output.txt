@@ -1,0 +1,1059 @@
+Console Output
+Started by user Moritz Fischer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/myFirstJob
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+using credential 2760a3c7-82f2-4571-bb12-bd01fb8669a1
+Cloning the remote Git repository
+Cloning repository https://github.com/Moritz-rt/nd035-c4-Security-and-DevOps.git
+ > git init /var/jenkins_home/workspace/myFirstJob # timeout=10
+Fetching upstream changes from https://github.com/Moritz-rt/nd035-c4-Security-and-DevOps.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.26.2'
+using GIT_SSH to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/Moritz-rt/nd035-c4-Security-and-DevOps.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Moritz-rt/nd035-c4-Security-and-DevOps.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision be83cdd3c2151fd153e8d50dd0bb01a736686540 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f be83cdd3c2151fd153e8d50dd0bb01a736686540 # timeout=10
+Commit message: "some fixes for jenkins"
+ > git rev-list --no-walk 0b97a866d9e8fb70b06261caf25197bedea2dee5 # timeout=10
+[myFirstJob] $ mvn -f starter_code/pom.xml clean compile package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:auth-course >-----------------------
+[INFO] Building auth-course 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.pom
+Progress (1): 2.7/8.0 kB
+Progress (1): 5.5/8.0 kB
+Progress (1): 8.0 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.pom (8.0 kB at 15 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.0.0-M5/surefire-3.0.0-M5.pom
+Progress (1): 2.7/27 kB
+Progress (1): 5.5/27 kB
+Progress (1): 8.2/27 kB
+Progress (1): 11/27 kB 
+Progress (1): 14/27 kB
+Progress (1): 16/27 kB
+Progress (1): 19/27 kB
+Progress (1): 22/27 kB
+Progress (1): 25/27 kB
+Progress (1): 27 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.0.0-M5/surefire-3.0.0-M5.pom (27 kB at 637 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/34/maven-parent-34.pom
+Progress (1): 2.7/43 kB
+Progress (1): 5.5/43 kB
+Progress (1): 8.2/43 kB
+Progress (1): 11/43 kB 
+Progress (1): 14/43 kB
+Progress (1): 16/43 kB
+Progress (1): 19/43 kB
+Progress (1): 22/43 kB
+Progress (1): 25/43 kB
+Progress (1): 27/43 kB
+Progress (1): 30/43 kB
+Progress (1): 33/43 kB
+Progress (1): 36/43 kB
+Progress (1): 38/43 kB
+Progress (1): 41/43 kB
+Progress (1): 43 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/34/maven-parent-34.pom (43 kB at 793 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/23/apache-23.pom
+Progress (1): 2.7/18 kB
+Progress (1): 5.5/18 kB
+Progress (1): 8.2/18 kB
+Progress (1): 11/18 kB 
+Progress (1): 14/18 kB
+Progress (1): 16/18 kB
+Progress (1): 18 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/23/apache-23.pom (18 kB at 594 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom
+Progress (1): 2.7/9.6 kB
+Progress (1): 5.5/9.6 kB
+Progress (1): 8.2/9.6 kB
+Progress (1): 9.6 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.pom (9.6 kB at 292 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.pom
+Progress (1): 2.7/3.2 kB
+Progress (1): 3.2 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.pom (3.2 kB at 189 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.pom
+Progress (1): 2.7/3.7 kB
+Progress (1): 3.7 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.pom (3.7 kB at 132 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.pom
+Progress (1): 2.7/3.9 kB
+Progress (1): 3.9 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.pom (3.9 kB at 230 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.0.0-M4/surefire-3.0.0-M4.pom
+Progress (1): 2.7/27 kB
+Progress (1): 5.5/27 kB
+Progress (1): 8.2/27 kB
+Progress (1): 11/27 kB 
+Progress (1): 14/27 kB
+Progress (1): 16/27 kB
+Progress (1): 19/27 kB
+Progress (1): 22/27 kB
+Progress (1): 25/27 kB
+Progress (1): 27 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.0.0-M4/surefire-3.0.0-M4.pom (27 kB at 746 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M5/surefire-extensions-api-3.0.0-M5.pom
+Progress (1): 2.7/4.0 kB
+Progress (1): 4.0 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M5/surefire-extensions-api-3.0.0-M5.pom (4.0 kB at 202 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.pom
+Progress (1): 2.7/4.8 kB
+Progress (1): 4.8 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.pom (4.8 kB at 211 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.pom
+Progress (1): 1.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.pom (1.6 kB at 85 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.pom
+Progress (1): 2.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.pom (2.2 kB at 149 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0-alpha-2/maven-3.0-alpha-2.pom
+Progress (1): 2.7/21 kB
+Progress (1): 5.5/21 kB
+Progress (1): 8.2/21 kB
+Progress (1): 11/21 kB 
+Progress (1): 14/21 kB
+Progress (1): 16/21 kB
+Progress (1): 19/21 kB
+Progress (1): 21 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.0-alpha-2/maven-3.0-alpha-2.pom (21 kB at 792 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom
+Progress (1): 2.7/32 kB
+Progress (1): 5.5/32 kB
+Progress (1): 8.2/32 kB
+Progress (1): 11/32 kB 
+Progress (1): 14/32 kB
+Progress (1): 16/32 kB
+Progress (1): 19/32 kB
+Progress (1): 22/32 kB
+Progress (1): 25/32 kB
+Progress (1): 27/32 kB
+Progress (1): 30/32 kB
+Progress (1): 32 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/10/maven-parent-10.pom (32 kB at 904 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.pom
+Progress (1): 4.1/11 kB
+Progress (1): 8.2/11 kB
+Progress (1): 11 kB    
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.pom (11 kB at 603 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/33/maven-shared-components-33.pom
+Progress (1): 4.1/5.1 kB
+Progress (1): 5.1 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/33/maven-shared-components-33.pom (5.1 kB at 283 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom
+Progress (1): 4.1/4.8 kB
+Progress (1): 4.8 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom (4.8 kB at 322 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
+Progress (1): 4.1/5.0 kB
+Progress (1): 5.0 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom (5.0 kB at 453 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.0.5/plexus-java-1.0.5.pom
+Progress (1): 4.1/4.6 kB
+Progress (1): 4.6 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.0.5/plexus-java-1.0.5.pom (4.6 kB at 271 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.0.5/plexus-languages-1.0.5.pom
+Progress (1): 3.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.0.5/plexus-languages-1.0.5.pom (3.9 kB at 301 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/6.2/plexus-6.2.pom
+Progress (1): 4.1/24 kB
+Progress (1): 8.2/24 kB
+Progress (1): 12/24 kB 
+Progress (1): 16/24 kB
+Progress (1): 20/24 kB
+Progress (1): 24 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/6.2/plexus-6.2.pom (24 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.pom
+Progress (1): 2.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.pom (2.9 kB at 210 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M5/surefire-extensions-api-3.0.0-M5.jar
+Progress (1): 4.1/43 kB
+Progress (1): 8.2/43 kB
+Progress (1): 12/43 kB 
+Progress (1): 16/43 kB
+Progress (1): 20/43 kB
+Progress (1): 25/43 kB
+Progress (1): 29/43 kB
+Progress (1): 33/43 kB
+Progress (1): 37/43 kB
+Progress (1): 41/43 kB
+Progress (1): 43 kB   
+Progress (2): 43 kB | 2.7/144 kB
+Progress (2): 43 kB | 5.5/144 kB
+Progress (2): 43 kB | 8.2/144 kB
+Progress (3): 43 kB | 8.2/144 kB | 2.7/311 kB
+Progress (3): 43 kB | 8.2/144 kB | 5.5/311 kB
+Progress (3): 43 kB | 8.2/144 kB | 8.2/311 kB
+Progress (4): 43 kB | 8.2/144 kB | 8.2/311 kB | 2.7/14 kB
+Progress (4): 43 kB | 8.2/144 kB | 8.2/311 kB | 5.5/14 kB
+Progress (4): 43 kB | 8.2/144 kB | 8.2/311 kB | 8.2/14 kB
+Progress (5): 43 kB | 8.2/144 kB | 8.2/311 kB | 8.2/14 kB | 2.7/24 kB
+Progress (5): 43 kB | 8.2/144 kB | 8.2/311 kB | 8.2/14 kB | 5.5/24 kB
+Progress (5): 43 kB | 8.2/144 kB | 8.2/311 kB | 8.2/14 kB | 8.2/24 kB
+Progress (5): 43 kB | 8.2/144 kB | 8.2/311 kB | 8.2/14 kB | 11/24 kB 
+Progress (5): 43 kB | 8.2/144 kB | 11/311 kB | 8.2/14 kB | 11/24 kB 
+Progress (5): 43 kB | 11/144 kB | 11/311 kB | 8.2/14 kB | 11/24 kB 
+Progress (5): 43 kB | 14/144 kB | 11/311 kB | 8.2/14 kB | 11/24 kB
+Progress (5): 43 kB | 16/144 kB | 11/311 kB | 8.2/14 kB | 11/24 kB
+Progress (5): 43 kB | 19/144 kB | 11/311 kB | 8.2/14 kB | 11/24 kB
+                                                                  
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M5/maven-surefire-plugin-3.0.0-M5.jar (43 kB at 512 kB/s)
+Progress (4): 19/144 kB | 11/311 kB | 11/14 kB | 11/24 kB
+Progress (4): 19/144 kB | 11/311 kB | 14 kB | 11/24 kB   
+Progress (4): 19/144 kB | 11/311 kB | 14 kB | 14/24 kB
+Progress (4): 19/144 kB | 14/311 kB | 14 kB | 14/24 kB
+Progress (4): 19/144 kB | 16/311 kB | 14 kB | 14/24 kB
+Progress (4): 19/144 kB | 19/311 kB | 14 kB | 14/24 kB
+                                                      
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.jar
+Progress (4): 22/144 kB | 19/311 kB | 14 kB | 14/24 kB
+Progress (4): 25/144 kB | 19/311 kB | 14 kB | 14/24 kB
+Progress (4): 27/144 kB | 19/311 kB | 14 kB | 14/24 kB
+Progress (4): 30/144 kB | 19/311 kB | 14 kB | 14/24 kB
+Progress (4): 33/144 kB | 19/311 kB | 14 kB | 14/24 kB
+Progress (4): 33/144 kB | 19/311 kB | 14 kB | 16/24 kB
+Progress (4): 33/144 kB | 19/311 kB | 14 kB | 19/24 kB
+Progress (4): 33/144 kB | 19/311 kB | 14 kB | 22/24 kB
+Progress (4): 33/144 kB | 19/311 kB | 14 kB | 24 kB   
+Progress (4): 33/144 kB | 22/311 kB | 14 kB | 24 kB
+Progress (4): 33/144 kB | 25/311 kB | 14 kB | 24 kB
+Progress (4): 33/144 kB | 27/311 kB | 14 kB | 24 kB
+Progress (4): 33/144 kB | 30/311 kB | 14 kB | 24 kB
+Progress (4): 33/144 kB | 33/311 kB | 14 kB | 24 kB
+Progress (4): 33/144 kB | 36/311 kB | 14 kB | 24 kB
+                                                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.jar (14 kB at 131 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.jar
+Progress (3): 36/144 kB | 36/311 kB | 24 kB
+Progress (4): 36/144 kB | 36/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 38/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 41/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 44/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 47/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 49/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 52/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 55/311 kB | 24 kB | 2.7/106 kB
+Progress (4): 36/144 kB | 58/311 kB | 24 kB | 2.7/106 kB
+Progress (5): 36/144 kB | 58/311 kB | 24 kB | 2.7/106 kB | 2.7/7.9 kB
+Progress (5): 36/144 kB | 58/311 kB | 24 kB | 2.7/106 kB | 5.5/7.9 kB
+Progress (5): 36/144 kB | 58/311 kB | 24 kB | 5.5/106 kB | 5.5/7.9 kB
+Progress (5): 36/144 kB | 58/311 kB | 24 kB | 8.2/106 kB | 5.5/7.9 kB
+Progress (5): 36/144 kB | 58/311 kB | 24 kB | 11/106 kB | 5.5/7.9 kB 
+Progress (5): 38/144 kB | 58/311 kB | 24 kB | 11/106 kB | 5.5/7.9 kB
+Progress (5): 41/144 kB | 58/311 kB | 24 kB | 11/106 kB | 5.5/7.9 kB
+Progress (5): 44/144 kB | 58/311 kB | 24 kB | 11/106 kB | 5.5/7.9 kB
+Progress (5): 47/144 kB | 58/311 kB | 24 kB | 11/106 kB | 5.5/7.9 kB
+                                                                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M5/surefire-extensions-api-3.0.0-M5.jar (24 kB at 192 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar
+Progress (4): 47/144 kB | 58/311 kB | 11/106 kB | 7.9 kB
+Progress (4): 47/144 kB | 58/311 kB | 14/106 kB | 7.9 kB
+Progress (4): 47/144 kB | 58/311 kB | 16/106 kB | 7.9 kB
+Progress (4): 47/144 kB | 58/311 kB | 19/106 kB | 7.9 kB
+Progress (4): 47/144 kB | 58/311 kB | 22/106 kB | 7.9 kB
+                                                        
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.jar (7.9 kB at 61 kB/s)
+Progress (3): 47/144 kB | 60/311 kB | 22/106 kB
+Progress (3): 47/144 kB | 63/311 kB | 22/106 kB
+Progress (3): 47/144 kB | 66/311 kB | 22/106 kB
+Progress (3): 47/144 kB | 69/311 kB | 22/106 kB
+Progress (3): 47/144 kB | 71/311 kB | 22/106 kB
+Progress (3): 47/144 kB | 74/311 kB | 22/106 kB
+Progress (3): 47/144 kB | 77/311 kB | 22/106 kB
+Progress (3): 47/144 kB | 80/311 kB | 22/106 kB
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 4.1/36 kB
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 8.2/36 kB
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 12/36 kB 
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 16/36 kB
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 20/36 kB
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 25/36 kB
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 29/36 kB
+Progress (4): 47/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 49/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 52/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 55/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 58/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 60/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 63/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 66/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 69/144 kB | 80/311 kB | 22/106 kB | 33/36 kB
+Progress (4): 69/144 kB | 80/311 kB | 22/106 kB | 36 kB   
+Progress (4): 69/144 kB | 82/311 kB | 22/106 kB | 36 kB
+Progress (4): 69/144 kB | 82/311 kB | 25/106 kB | 36 kB
+Progress (4): 69/144 kB | 82/311 kB | 27/106 kB | 36 kB
+Progress (4): 69/144 kB | 82/311 kB | 30/106 kB | 36 kB
+Progress (4): 69/144 kB | 82/311 kB | 33/106 kB | 36 kB
+                                                       
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar
+Progress (5): 69/144 kB | 82/311 kB | 33/106 kB | 36 kB | 2.7/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 36/106 kB | 36 kB | 2.7/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 38/106 kB | 36 kB | 2.7/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 41/106 kB | 36 kB | 2.7/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 41/106 kB | 36 kB | 5.5/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 41/106 kB | 36 kB | 8.2/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 41/106 kB | 36 kB | 11/128 kB 
+Progress (5): 69/144 kB | 82/311 kB | 41/106 kB | 36 kB | 14/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 41/106 kB | 36 kB | 16/128 kB
+Progress (5): 69/144 kB | 82/311 kB | 41/106 kB | 36 kB | 19/128 kB
+                                                                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar (36 kB at 204 kB/s)
+Progress (4): 69/144 kB | 82/311 kB | 44/106 kB | 19/128 kB
+Progress (4): 69/144 kB | 82/311 kB | 47/106 kB | 19/128 kB
+Progress (4): 69/144 kB | 82/311 kB | 49/106 kB | 19/128 kB
+Progress (4): 69/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 71/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 74/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 77/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 80/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 82/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 85/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 88/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 90/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 82/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 85/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 88/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 90/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 93/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 96/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 99/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 101/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 104/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 52/106 kB | 19/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 52/106 kB | 22/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 52/106 kB | 25/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 52/106 kB | 27/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 52/106 kB | 30/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 55/106 kB | 30/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 58/106 kB | 30/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 60/106 kB | 30/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 63/106 kB | 30/128 kB
+                                                            
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar
+Progress (4): 93/144 kB | 107/311 kB | 66/106 kB | 30/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 69/106 kB | 30/128 kB
+Progress (4): 93/144 kB | 107/311 kB | 71/106 kB | 30/128 kB
+Progress (4): 96/144 kB | 107/311 kB | 71/106 kB | 30/128 kB
+Progress (4): 99/144 kB | 107/311 kB | 71/106 kB | 30/128 kB
+Progress (4): 101/144 kB | 107/311 kB | 71/106 kB | 30/128 kB
+Progress (4): 104/144 kB | 107/311 kB | 71/106 kB | 30/128 kB
+Progress (4): 107/144 kB | 107/311 kB | 71/106 kB | 30/128 kB
+Progress (5): 107/144 kB | 107/311 kB | 71/106 kB | 30/128 kB | 4.1/61 kB
+Progress (5): 107/144 kB | 107/311 kB | 71/106 kB | 30/128 kB | 8.2/61 kB
+Progress (5): 107/144 kB | 107/311 kB | 71/106 kB | 30/128 kB | 12/61 kB 
+Progress (5): 107/144 kB | 107/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 110/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 112/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 115/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 118/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 121/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 123/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 126/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 30/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 33/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 36/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 38/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 16/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 20/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 25/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 29/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 33/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 37/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 41/61 kB
+Progress (5): 107/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 110/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 112/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 115/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 71/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 74/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 77/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 80/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 82/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 85/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 88/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 90/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 93/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 96/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 99/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 101/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 129/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 132/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 134/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 137/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 140/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 143/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 145/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 148/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 41/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 44/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 47/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 49/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 52/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 55/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 58/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 104/106 kB | 60/128 kB | 45/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 106 kB | 60/128 kB | 45/61 kB    
+Progress (5): 118/144 kB | 151/311 kB | 106 kB | 60/128 kB | 49/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 106 kB | 60/128 kB | 53/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 106 kB | 60/128 kB | 57/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61/61 kB
+Progress (5): 118/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB   
+Progress (5): 121/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 123/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 126/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 129/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 132/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 134/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 137/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 140/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 143/144 kB | 151/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 143/144 kB | 154/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 143/144 kB | 156/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 143/144 kB | 159/311 kB | 106 kB | 60/128 kB | 61 kB
+Progress (5): 143/144 kB | 162/311 kB | 106 kB | 60/128 kB | 61 kB
+                                                                  
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.jar (106 kB at 381 kB/s)
+Progress (4): 143/144 kB | 162/311 kB | 63/128 kB | 61 kB
+Progress (4): 143/144 kB | 162/311 kB | 66/128 kB | 61 kB
+Progress (4): 143/144 kB | 162/311 kB | 69/128 kB | 61 kB
+                                                         
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
+Progress (4): 144 kB | 162/311 kB | 69/128 kB | 61 kB
+                                                     
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar (61 kB at 219 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.0.5/plexus-java-1.0.5.jar
+Progress (3): 144 kB | 162/311 kB | 71/128 kB
+Progress (3): 144 kB | 165/311 kB | 71/128 kB
+Progress (3): 144 kB | 167/311 kB | 71/128 kB
+Progress (3): 144 kB | 170/311 kB | 71/128 kB
+Progress (3): 144 kB | 173/311 kB | 71/128 kB
+Progress (3): 144 kB | 175/311 kB | 71/128 kB
+Progress (4): 144 kB | 175/311 kB | 71/128 kB | 2.7/52 kB
+Progress (4): 144 kB | 175/311 kB | 71/128 kB | 5.5/52 kB
+Progress (4): 144 kB | 175/311 kB | 74/128 kB | 5.5/52 kB
+Progress (4): 144 kB | 175/311 kB | 77/128 kB | 5.5/52 kB
+Progress (4): 144 kB | 175/311 kB | 80/128 kB | 5.5/52 kB
+Progress (4): 144 kB | 175/311 kB | 82/128 kB | 5.5/52 kB
+Progress (4): 144 kB | 175/311 kB | 85/128 kB | 5.5/52 kB
+Progress (4): 144 kB | 175/311 kB | 88/128 kB | 5.5/52 kB
+                                                         
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.jar (144 kB at 457 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.jar
+Progress (3): 175/311 kB | 88/128 kB | 8.2/52 kB
+Progress (4): 175/311 kB | 88/128 kB | 8.2/52 kB | 2.7/164 kB
+Progress (4): 175/311 kB | 88/128 kB | 8.2/52 kB | 5.5/164 kB
+Progress (4): 175/311 kB | 88/128 kB | 8.2/52 kB | 8.2/164 kB
+Progress (4): 175/311 kB | 88/128 kB | 8.2/52 kB | 11/164 kB 
+Progress (4): 175/311 kB | 88/128 kB | 8.2/52 kB | 14/164 kB
+Progress (4): 175/311 kB | 90/128 kB | 8.2/52 kB | 14/164 kB
+Progress (4): 175/311 kB | 93/128 kB | 8.2/52 kB | 14/164 kB
+Progress (4): 175/311 kB | 96/128 kB | 8.2/52 kB | 14/164 kB
+Progress (5): 175/311 kB | 96/128 kB | 8.2/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 178/311 kB | 96/128 kB | 8.2/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 181/311 kB | 96/128 kB | 8.2/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 184/311 kB | 96/128 kB | 8.2/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 186/311 kB | 96/128 kB | 8.2/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 96/128 kB | 8.2/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 96/128 kB | 11/52 kB | 14/164 kB | 4.1/115 kB 
+Progress (5): 189/311 kB | 96/128 kB | 14/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 96/128 kB | 16/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 96/128 kB | 19/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 96/128 kB | 22/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 96/128 kB | 25/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 96/128 kB | 27/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 4.1/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 8.2/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 12/115 kB 
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 16/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 20/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 25/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 29/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 14/164 kB | 33/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 16/164 kB | 33/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 19/164 kB | 33/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 22/164 kB | 33/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 25/164 kB | 33/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 27/164 kB | 33/115 kB
+Progress (5): 189/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 192/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 195/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 197/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 200/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 203/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 206/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 208/311 kB | 99/128 kB | 27/52 kB | 30/164 kB | 33/115 kB
+Progress (5): 208/311 kB | 99/128 kB | 27/52 kB | 33/164 kB | 33/115 kB
+Progress (5): 208/311 kB | 99/128 kB | 27/52 kB | 36/164 kB | 33/115 kB
+Progress (5): 208/311 kB | 99/128 kB | 27/52 kB | 38/164 kB | 33/115 kB
+Progress (5): 208/311 kB | 99/128 kB | 27/52 kB | 41/164 kB | 33/115 kB
+Progress (5): 208/311 kB | 99/128 kB | 27/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 99/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 101/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 104/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 107/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 110/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 112/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 115/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 118/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 121/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 123/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 208/311 kB | 126/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 211/311 kB | 126/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 214/311 kB | 126/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 217/311 kB | 126/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 41/164 kB | 37/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 37/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 41/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 45/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 49/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 53/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 57/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 61/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 66/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 70/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 74/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 78/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 30/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 33/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 36/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 38/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 41/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 44/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 47/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 49/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 52/52 kB | 44/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 52 kB | 44/164 kB | 82/115 kB   
+Progress (5): 219/311 kB | 126/128 kB | 52 kB | 47/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 52 kB | 49/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 52 kB | 52/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 126/128 kB | 52 kB | 55/164 kB | 82/115 kB
+Progress (5): 219/311 kB | 128 kB | 52 kB | 55/164 kB | 82/115 kB    
+Progress (5): 222/311 kB | 128 kB | 52 kB | 55/164 kB | 82/115 kB
+Progress (5): 225/311 kB | 128 kB | 52 kB | 55/164 kB | 82/115 kB
+Progress (5): 228/311 kB | 128 kB | 52 kB | 55/164 kB | 82/115 kB
+Progress (5): 230/311 kB | 128 kB | 52 kB | 55/164 kB | 82/115 kB
+Progress (5): 233/311 kB | 128 kB | 52 kB | 55/164 kB | 82/115 kB
+                                                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.0.5/plexus-java-1.0.5.jar (52 kB at 135 kB/s)
+Progress (4): 233/311 kB | 128 kB | 58/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 60/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 63/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 66/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 69/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 71/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 74/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 77/164 kB | 82/115 kB
+Progress (4): 233/311 kB | 128 kB | 80/164 kB | 82/115 kB
+Progress (4): 236/311 kB | 128 kB | 80/164 kB | 82/115 kB
+                                                         
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar (128 kB at 325 kB/s)
+Progress (3): 236/311 kB | 80/164 kB | 86/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 90/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 94/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 98/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 102/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 106/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 111/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 115/115 kB
+Progress (3): 236/311 kB | 80/164 kB | 115 kB    
+                                             
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.jar
+Progress (3): 239/311 kB | 80/164 kB | 115 kB
+Progress (3): 241/311 kB | 80/164 kB | 115 kB
+Progress (3): 244/311 kB | 80/164 kB | 115 kB
+Progress (3): 247/311 kB | 80/164 kB | 115 kB
+Progress (3): 250/311 kB | 80/164 kB | 115 kB
+Progress (3): 252/311 kB | 80/164 kB | 115 kB
+Progress (3): 255/311 kB | 80/164 kB | 115 kB
+Progress (3): 255/311 kB | 82/164 kB | 115 kB
+Progress (3): 255/311 kB | 85/164 kB | 115 kB
+Progress (3): 255/311 kB | 88/164 kB | 115 kB
+Progress (3): 255/311 kB | 90/164 kB | 115 kB
+Progress (4): 255/311 kB | 90/164 kB | 115 kB | 0/1.9 MB
+Progress (4): 255/311 kB | 90/164 kB | 115 kB | 0/1.9 MB
+                                                        
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.jar (115 kB at 275 kB/s)
+Progress (3): 255/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 255/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 255/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 258/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 260/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 263/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 266/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 269/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 271/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 90/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 93/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 96/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 99/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 101/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 104/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 107/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 110/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 112/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 115/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 118/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 121/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 121/164 kB | 0/1.9 MB
+Progress (3): 274/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 274/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 274/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 277/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 280/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 282/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 285/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 288/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 121/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 123/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 126/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 129/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 291/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 293/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 296/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 299/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 132/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 134/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 137/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 140/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 143/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 145/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 145/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 145/164 kB | 0.1/1.9 MB
+Progress (3): 302/311 kB | 145/164 kB | 0.1/1.9 MB
+Progress (3): 304/311 kB | 145/164 kB | 0.1/1.9 MB
+Progress (3): 307/311 kB | 145/164 kB | 0.1/1.9 MB
+Progress (3): 310/311 kB | 145/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 145/164 kB | 0.1/1.9 MB    
+Progress (3): 311 kB | 148/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 151/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 154/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 156/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 156/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 156/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 159/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 162/164 kB | 0.1/1.9 MB
+Progress (3): 311 kB | 164 kB | 0.1/1.9 MB    
+Progress (3): 311 kB | 164 kB | 0.2/1.9 MB
+Progress (3): 311 kB | 164 kB | 0.2/1.9 MB
+                                          
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.0.0-M5/maven-surefire-common-3.0.0-M5.jar (311 kB at 618 kB/s)
+Progress (2): 164 kB | 0.2/1.9 MB
+Progress (2): 164 kB | 0.2/1.9 MB
+Progress (2): 164 kB | 0.2/1.9 MB
+Progress (2): 164 kB | 0.2/1.9 MB
+Progress (2): 164 kB | 0.2/1.9 MB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar (164 kB at 319 kB/s)
+Progress (1): 0.2/1.9 MB
+Progress (1): 0.2/1.9 MB
+Progress (1): 0.2/1.9 MB
+Progress (1): 0.2/1.9 MB
+Progress (1): 0.2/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.3/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.4/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.5/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.6/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.7/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.8/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 0.9/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.0/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.1/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.2/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.3/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.4/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.5/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.6/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.7/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.8/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9/1.9 MB
+Progress (1): 1.9 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.jar (1.9 MB at 2.3 MB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ auth-course ---
+[INFO] Deleting /var/jenkins_home/workspace/myFirstJob/starter_code/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /var/jenkins_home/workspace/myFirstJob/starter_code/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /var/jenkins_home/workspace/myFirstJob/starter_code/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/jenkins_home/workspace/myFirstJob/starter_code/target/test-classes
+[INFO] /var/jenkins_home/workspace/myFirstJob/starter_code/src/test/java/com/example/demo/TestUtils.java: /var/jenkins_home/workspace/myFirstJob/starter_code/src/test/java/com/example/demo/TestUtils.java uses or overrides a deprecated API.
+[INFO] /var/jenkins_home/workspace/myFirstJob/starter_code/src/test/java/com/example/demo/TestUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ auth-course ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+22:29:50.313 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.demo.SareetaApplicationTests]
+22:29:50.321 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:29:50.336 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:29:50.410 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.SareetaApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:29:50.455 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.SareetaApplicationTests], using SpringBootContextLoader
+22:29:50.466 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.SareetaApplicationTests]: class path resource [com/example/demo/SareetaApplicationTests-context.xml] does not exist
+22:29:50.468 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.SareetaApplicationTests]: class path resource [com/example/demo/SareetaApplicationTestsContext.groovy] does not exist
+22:29:50.469 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.SareetaApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:29:50.470 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.SareetaApplicationTests]: SareetaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:29:50.584 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.SareetaApplicationTests]
+22:29:50.784 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/jenkins_home/workspace/myFirstJob/starter_code/target/classes/com/example/demo/SareetaApplication.class]
+22:29:50.786 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SareetaApplication for test class com.example.demo.SareetaApplicationTests
+22:29:51.090 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.SareetaApplicationTests]: using defaults.
+22:29:51.091 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+22:29:51.165 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14dda234, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3f390d63, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@74a6a609, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5a411614, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2374d36a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54d18072, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1506f20f, org.springframework.test.context.event.EventPublishingTestExecutionListener@47a5b70d, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@424fd310, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@1a45193b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@38f116f6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5286c33a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6e6d5d29, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c530d1e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c25e6c4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@85e6769]
+22:29:51.175 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+22:29:51.182 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+22:29:51.192 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+22:29:51.193 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+22:29:51.203 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+22:29:51.204 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+22:29:51.279 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.demo.SareetaApplicationTests]
+22:29:51.283 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:29:51.285 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:29:51.286 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.SareetaApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:29:51.288 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.SareetaApplicationTests], using SpringBootContextLoader
+22:29:51.294 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.SareetaApplicationTests]: class path resource [com/example/demo/SareetaApplicationTests-context.xml] does not exist
+22:29:51.296 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.SareetaApplicationTests]: class path resource [com/example/demo/SareetaApplicationTestsContext.groovy] does not exist
+22:29:51.296 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.SareetaApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:29:51.297 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.SareetaApplicationTests]: SareetaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:29:51.302 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.SareetaApplicationTests]
+22:29:51.306 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SareetaApplication for test class com.example.demo.SareetaApplicationTests
+22:29:51.310 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.SareetaApplicationTests]: using defaults.
+22:29:51.311 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+22:29:51.314 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@476b0ae6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1c6804cd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@655f7ea, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@549949be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b3a45f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@17a87e37, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3eeb318f, org.springframework.test.context.event.EventPublishingTestExecutionListener@20a14b55, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@39ad977d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@6da00fb9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a202ccb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@20f12539, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@75b25825, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@18025ced, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13cf7d52, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3a3e4aff]
+22:29:51.319 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+22:29:51.319 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+22:29:51.319 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+22:29:51.320 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+22:29:51.320 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.SareetaApplicationTests]
+22:29:51.321 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.SareetaApplicationTests]
+[INFO] Running com.example.demo.OrderControllerTest
+22:29:51.493 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:29:51.496 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:29:51.499 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.OrderControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:29:51.501 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.OrderControllerTest], using SpringBootContextLoader
+22:29:51.508 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.OrderControllerTest]: class path resource [com/example/demo/OrderControllerTest-context.xml] does not exist
+22:29:51.509 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.OrderControllerTest]: class path resource [com/example/demo/OrderControllerTestContext.groovy] does not exist
+22:29:51.510 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.OrderControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:29:51.514 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.OrderControllerTest]: OrderControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:29:51.517 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.OrderControllerTest]
+22:29:51.520 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.SareetaApplication for test class com.example.demo.OrderControllerTest
+22:29:51.525 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.OrderControllerTest]: using defaults.
+22:29:51.526 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+22:29:51.530 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@26a4842b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7e38a7fe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@366ef90e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33e01298, org.springframework.test.context.support.DirtiesContextTestExecutionListener@31e75d13, org.springframework.test.context.transaction.TransactionalTestExecutionListener@a5b0b86, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4b3c354a, org.springframework.test.context.event.EventPublishingTestExecutionListener@78fb9a67, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@73ff4fae, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@21aa6d6c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@b968a76, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2f9a01c1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2611b9a3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54227100, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6b5894c8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1433046b]
+22:29:51.538 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2692b61e testClass = OrderControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7b64240d testClass = OrderControllerTest, locations = '{}', classes = '{class com.example.demo.SareetaApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@35b74c5c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@81d9a72, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1e13529a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3336e6b6, org.springframework.boot.test.context.SpringBootTestArgs@1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+22:29:51.635 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2021-03-03 22:29:52.435  INFO 2597 --- [           main] com.example.demo.OrderControllerTest     : Starting OrderControllerTest on c333a88bda06 with PID 2597 (started by root in /var/jenkins_home/workspace/myFirstJob/starter_code)
+2021-03-03 22:29:52.441  INFO 2597 --- [           main] com.example.demo.OrderControllerTest     : No active profile set, falling back to default profiles: default
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12:08 min
+[INFO] Finished at: 2021-03-03T22:41:45Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.2:test (default-test) on project auth-course: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /var/jenkins_home/workspace/myFirstJob/starter_code/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+[ERROR] Command was /bin/sh -c cd /var/jenkins_home/workspace/myFirstJob/starter_code && /var/jenkins_home/tools/hudson.model.JDK/JDK1.8/bin/java -jar /var/jenkins_home/workspace/myFirstJob/starter_code/target/surefire/surefirebooter4006511876168482359.jar /var/jenkins_home/workspace/myFirstJob/starter_code/target/surefire 2021-03-03T22-29-47_911-jvmRun1 surefire12491853465460976235tmp surefire_016284455101486468780tmp
+[ERROR] Error occurred in starting fork, check output in log
+[ERROR] Process Exit Code: 1
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+[ERROR] Command was /bin/sh -c cd /var/jenkins_home/workspace/myFirstJob/starter_code && /var/jenkins_home/tools/hudson.model.JDK/JDK1.8/bin/java -jar /var/jenkins_home/workspace/myFirstJob/starter_code/target/surefire/surefirebooter4006511876168482359.jar /var/jenkins_home/workspace/myFirstJob/starter_code/target/surefire 2021-03-03T22-29-47_911-jvmRun1 surefire12491853465460976235tmp surefire_016284455101486468780tmp
+[ERROR] Error occurred in starting fork, check output in log
+[ERROR] Process Exit Code: 1
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:669)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:282)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:245)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1183)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1011)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:857)
+[ERROR] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[ERROR] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+[ERROR] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+[ERROR] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)
+[ERROR] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)
+[ERROR] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)
+[ERROR] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[ERROR] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[ERROR] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+[DeployPublisher][INFO] Build failed, project not deployed
+Finished: FAILURE
