@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.persistence.Item;
 import com.example.demo.model.persistence.repositories.ItemRepository;
 
+import javax.transaction.Transactional;
+
+@Transactional
 @RestController
 @RequestMapping("/api/item")
 public class ItemController {
