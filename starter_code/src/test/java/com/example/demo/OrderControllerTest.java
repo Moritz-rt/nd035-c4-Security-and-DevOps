@@ -12,14 +12,10 @@ import com.example.demo.model.requests.CreateUserRequest;
 import com.example.demo.model.requests.ModifyCartRequest;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -39,29 +35,6 @@ public class OrderControllerTest {
     @Autowired
     OrderController orderController;
 
-    @Test
-    public void prepareOrder() {
-        Cart cart = new Cart();
-
-        Item item1 = new Item();
-        item1.setId(1L);
-        item1.setName("apples");
-        item1.setPrice(new BigDecimal(2.99));
-        item1.setDescription("Big box with fresh apples");
-
-        Item item2 = new Item();
-        item2.setId(2L);
-        item2.setName("bananas");
-        item2.setPrice(new BigDecimal(1.99));
-        item2.setDescription("5 bananas special");
-
-        assertFalse(item1.equals(item2));
-
-        cart.addItem(item1);
-        cart.addItem(item2);
-        assertEquals(2, cart.getItems().size());
-        assertEquals(new BigDecimal(4.98).setScale(2, RoundingMode.HALF_UP), cart.getTotal().setScale(2, RoundingMode.HALF_UP));
-    }
 
     // Integration
     @Test
@@ -79,7 +52,12 @@ public class OrderControllerTest {
         ResponseEntity<List<Item>> itemListNotFound = itemController.getItemsByName("something");
         assertEquals(404, itemListNotFound.getStatusCodeValue());
 
-        ResponseEntity<Item> itemOne = itemController.getItemById(1L);
+        ResponseEntity<Item> itemOne = null;
+        try {
+            itemOne = itemController.getItemById(1L);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         assertTrue(itemOne.getBody().getName().equals("Round Widget"));
 
         // add to cart
@@ -99,29 +77,6 @@ public class OrderControllerTest {
         // get order history
         ResponseEntity<List<UserOrder>> userOrderList = orderController.getOrdersForUser(user.getBody().getUsername());
         assertEquals(1, userOrderList.getBody().size());
-    }
-
-    @Test
-    public void createUser() {
-        CreateUserRequest createUserRequest = createUserRequest("3");
-        ResponseEntity<User> user = userController.createUser(createUserRequest);
-        Assert.assertEquals(200, user.getStatusCodeValue());
-
-        ResponseEntity<User> userFromDB = userController.findByUserName(createUserRequest.getUsername());
-        Assert.assertEquals(200, userFromDB.getStatusCodeValue());
-        Assert.assertEquals(createUserRequest.getUsername(), userFromDB.getBody().getUsername());
-    }
-
-    @Test
-    public void createUserValidation() {
-        CreateUserRequest createUserRequest = createUserRequest("4");
-        createUserRequest.setPassword("123");
-        ResponseEntity<User> user = userController.createUser(createUserRequest);
-        Assert.assertEquals(400, user.getStatusCodeValue());
-
-        createUserRequest.setConfirmPassword("123");
-        ResponseEntity<User> user2 = userController.createUser(createUserRequest);
-        Assert.assertEquals(400, user2.getStatusCodeValue());
     }
 
     @Test

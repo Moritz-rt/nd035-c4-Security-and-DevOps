@@ -1,7 +1,10 @@
 package com.example.demo.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +22,8 @@ import javax.transaction.Transactional;
 @RequestMapping("/api/item")
 public class ItemController {
 
+	private static final Logger log = LoggerFactory.getLogger(UserController.class);
+
 	@Autowired
 	private ItemRepository itemRepository;
 	
@@ -28,8 +33,15 @@ public class ItemController {
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Item> getItemById(@PathVariable Long id) {
-		return ResponseEntity.of(itemRepository.findById(id));
+	public ResponseEntity<Item> getItemById(@PathVariable Long id) throws Exception {
+		Optional<Item> item = itemRepository.findById(id);
+		if (item.isPresent()) {
+			return ResponseEntity.of(item);
+		}
+		// for testing splunk
+		log.error("An exception occurred!", new Exception("item not found: "+id));
+		throw new Exception("item not found: "+id);
+
 	}
 	
 	@GetMapping("/name/{name}")
