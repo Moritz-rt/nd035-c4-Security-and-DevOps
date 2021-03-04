@@ -55,6 +55,13 @@ public class UserController {
 			return ResponseEntity.badRequest().build();
 		}
 
+		User existingUser = userRepository.findByUsername(createUserRequest.getUsername());
+		if(null != existingUser) {
+			log.trace("User creation failed: "+createUserRequest.getUsername() + " already exists");
+//			throw new Exception("User creation failed: " + createUserRequest.getUsername() + " already exists. Choose other name!");
+			return ResponseEntity.badRequest().build();
+		}
+
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 		userRepository.save(user);
 		Cart cart = new Cart();
